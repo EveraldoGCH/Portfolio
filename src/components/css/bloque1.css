@@ -4,5 +4,15 @@
 }
 
 .bloque1front{
+    position: relative;
+    top: 100px;
+}
 
+.tituloBloque1{
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+}
+.tituloBloque1:hover{
+    font-size: 33px;
+    transition: all 0.6s ease-in-out;
 }

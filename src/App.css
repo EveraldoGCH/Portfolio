@@ -1,3 +1,20 @@
 *{
   margin:0in
 }
+
+.App{
+  height: 100vh;
+}
+
+.App, .childSnapEffect{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightcoral;
+    
+}
+
+.childSnapEffect>*{
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+

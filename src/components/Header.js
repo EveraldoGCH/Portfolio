@@ -28,7 +28,7 @@ export default class Header extends Component {
   render() {
     return (
         <div className='header'>
-            <p className='everaldo'>Bienvenidx!</p>
+            <a href='#inicio'><p className='bienvenidx'>Bienvenidx!</p></a>
         <div className='burguerMenu'>
             {
                 this.state.menuClic ?
