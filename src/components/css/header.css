@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+.header{
+    background-color:#499faa;
+    border-radius: 0 0 0 50px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow:
+    0px 6px 27px rgba(0, 0, 0, 0.25);
+}
+
+.boton{
+    font-size: 220%;
+    position: absolute;
+    right:0;
+    top: 0.8em;
+    color: #fcedd8;
+    padding-right: 0.4em;
+    box-shadow:0px 5px 0px #eb452b, 
+                9px 10px 0px #efa032, 
+                16px 15px 0px #46b59b;
+}
+
+.everaldo{
+    font-family: 'Exo', sans-serif;
+    font-size: 2em;
+    color: #fcedd8;
+    font-weight: 900;
+    position: absolute;
+    top: 0.6em;
+    padding-left: 10px;
+    text-shadow:3px 3px 0px #eb452b, 
+                6px 6px 0px #efa032, 
+                9px 9px 0px #46b59b;
+                
+                ;}
