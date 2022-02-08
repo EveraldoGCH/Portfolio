@@ -9,35 +9,47 @@ export default class Header extends Component {
       super()
     
       this.state = {
-         menuClic:false,
+         toggleMenu:true
       }
     }
 
+    toggleMenuFn(){
+        if(this.state.toggleMenu===true){
+            this.setState({
+                toggleMenu:false
+            })
+        }
+        else{
+            this.setState({
+                toggleMenu:true
+            })
+        }
+    }
 
-    clickTrue(){
-        this.setState({
-            menuClic:true
-        })
-    }
-    clickfalse(){
-        this.setState({
-            menuClic:false
-        })
-    }
-    
   render() {
     return (
         <div className='header'>
-            <a href='#inicio'><p className='bienvenidx'>Bienvenidx!</p></a>
-        <div className='burguerMenu'>
-            {
-                this.state.menuClic ?
-                null
-                :
-                <FontAwesomeIcon icon={faBars} className='boton'/>
-                
-            }
-        </div>
+            <div>
+                <a href='#inicio'>
+                <p className='bienvenidx'>Bienvenidx!</p></a>
+            </div>
+                <FontAwesomeIcon icon={faBars} className='boton' onClick={()=>this.toggleMenuFn()}/>
+            <div className={this.state.toggleMenu?"burguerMenuClosed":"burguerMenuOpen"}>
+
+                <ul>
+                    <li>
+                        <a href='#inicio'>Bloque1</a>
+                    </li>
+
+                    <li>
+                        <a href='#bloque2'>Bloque2</a>
+                    </li>
+                    
+                    <li>
+                        <a href='#bloque3'> Bloque3</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
   }

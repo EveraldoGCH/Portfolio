@@ -3,7 +3,7 @@ import "./css/bloque2.css"
 
 export default function Bloque2() {
   return (
-   <div className='bloque2'>
+   <div className='bloque2' id='bloque2'>
 bloque2
    </div>
   );
